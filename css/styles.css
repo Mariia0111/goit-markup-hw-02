@@ -1,13 +1,19 @@
 :root {
+  --text: #434455;
+  --dark: #2e2f42;
+  --white: #ffffff;
   --title-color: #2e2f42;
-  --text-color: #2e2f42;
-  --second-text-color: #f4f4fd;
+  --light: #f4f4fd;
+  --primary-brand: #4d5ae5;
+  --pressed-state: #404bbf;
+  --white-background: #ffffff;
+  --light-background: #f4f4fd;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  color: #434455;
-  background-color: #ffffff;
+  color: var(--text);
+  background-color: var(--white-background);
 }
 
 .section-subtitle {
@@ -15,7 +21,7 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--text-color);
+  color: var(--dark);
 }
 
 .section-text {
@@ -33,13 +39,13 @@ body {
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  color: #4d5ae5;
+  color: var(--primary-brand);
   text-transform: uppercase;
 }
 
 .header-logo-studio {
   font-family: "Raleway", sans-serif;
-  color: #2e2f42;
+  color: var(--dark);
 }
 
 .list {
@@ -51,12 +57,12 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--text-color);
+  color: var(--dark);
 }
 
 .header-menu-link:hover,
 .header-menu-link:focus {
-  color: #404bbf;
+  color: var(--pressed-state);
 }
 
 .header-address {
@@ -64,7 +70,7 @@ body {
 }
 
 .header-address-link {
-  color: #434455;
+  color: var(--text);
   font-size: 16px;
   font-style: normal;
   line-height: 1.5;
@@ -73,22 +79,21 @@ body {
 
 .header-address-link:hover,
 .header-address-link:focus {
-  color: #404bbf;
+  color: var(--pressed-state);
 }
 
 /************************* SECTION 1 *************************/
 
 .hero {
-  background-color: #2e2f42;
+  background-color: var(--dark);
 }
 
 .hero-title {
-  font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: var(--white);
 }
 
 .hero-btn {
@@ -97,59 +102,36 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #ffffff;
-  background-color: #4d5ae5;
+  color: var(--white);
+  background-color: var(--primary-brand);
   cursor: pointer;
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: #404bbf;
+  background-color: var(--pressed-state);
 }
 
 /************************* SECTION 2 *************************/
 
-.features {
-}
-
-.features-list {
-}
-
-.features-item {
-}
-
-.features-subtitle {
-}
-
-.features-item-text {
-}
-
 /************************* SECTION 3 *************************/
 
-.about {
-}
-
 .about-subtitle {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--title-color);
-}
-
-.about-list {
 }
 
 /************************* SECTION 4 *************************/
 
 .our-team {
-  background-color: #f4f4fd;
+  background-color: var(--light-background);
 }
 
 .team {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -158,11 +140,8 @@ body {
   color: var(--title-color);
 }
 
-.team-list {
-}
-
 .team-item {
-  background-color: #ffffff;
+  background-color: var(--white-background);
 }
 
 .team-name {
@@ -176,7 +155,7 @@ body {
 /************************* FOOTER *************************/
 
 .footer {
-  background-color: #2e2f42;
+  background-color: var(--title-color);
 }
 
 .footer-logo {
@@ -185,31 +164,25 @@ body {
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  color: #4d5ae5;
+  color: var(--primary-brand);
   text-transform: uppercase;
 }
 
 .footer-logo-studio {
   font-family: "Raleway", sans-serif;
-  color: #f4f4fd;
+  color: var(--light);
 }
 
 .footer-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--second-text-color);
+  color: var(--light);
 }
 
 /************************* Portfolio *************************/
 
 /************************* SECTION 1 *************************/
 
-.menu {
-}
-.menu-list {
-}
-.menu-item {
-}
 .menu-btn {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -217,32 +190,26 @@ body {
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.04em;
-  color: #4d5ae5;
-  background-color: #f4f4fd;
+  color: var(--primary-brand);
+  background-color: var(--light-background);
   cursor: pointer;
 }
 
 .menu-btn:hover,
 .menu-btn:focus {
-  color: #ffffff;
-  background-color: #404bbf;
+  color: var(--white);
+  background-color: var(--pressed-state);
 }
 
-.portfolio {
-}
-.portfolio-list {
-}
-.portfolio-item {
-}
 .portfolio-subtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--dark);
 }
 .portfolio-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--text);
 }
